@@ -5,6 +5,10 @@
 
 body{
     font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    height: 100dvh;
+    display: grid;
+    grid-template-rows: 130px auto;
 }
 
 header{
@@ -20,6 +24,10 @@ h1{
     font-size: 3em;
 }
 
+h1 a{
+    color: black;
+}
+
 nav ul{
     list-style: none;
     display: flex;
@@ -33,6 +41,17 @@ nav a{
 
 .cerrar{
     display: none;
+}
+
+.contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 4em;
 }
 
 @media screen and (max-width: 800px){
@@ -94,5 +113,9 @@ nav a{
         background-color: blue;
         height: 3px;
         margin-bottom: 5px;
+    }
+
+    h2{
+        font-size: 2em;
     }
 }

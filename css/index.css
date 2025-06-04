@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    padding: 30px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    font-weight: 500;
+    font-size: 3em;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a{
+    color: #444;
+    font-size: 2em;
+}
+
+.cerrar{
+    display: none;
+}
+
+@media screen and (max-width: 800px){
+    nav{
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        background-color: blue;
+        padding: 30px;
+        width: calc(100% - 60px);
+        height: calc(100vh - 60px);
+        transition: top 0.8s;
+    }
+
+    .desplegado{
+        top: 0;
+    }
+
+    nav ul{
+        display: block;
+    }
+
+    nav li:not(:first-child){
+        margin-top: 40px;
+    }
+
+    nav a{
+        font-size: 4em;
+        color: white;
+    }
+
+    .abrir,
+    .cerrar{
+        display: block;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        color: white;
+        font-size: 2em;
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        cursor: vertical-text;
+    }
+
+    .abrir{
+        display: block;
+        background-color: transparent;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 30px;
+        padding: 5px 5px 0;
+        cursor: crosshair;
+    }
+
+    .abrir span{
+        display: block;
+        background-color: blue;
+        height: 3px;
+        margin-bottom: 5px;
+    }
+}

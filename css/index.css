@@ -9,6 +9,7 @@ body{
     height: 100dvh;
     display: grid;
     grid-template-rows: 130px auto;
+    color: blue;
 }
 
 header{
